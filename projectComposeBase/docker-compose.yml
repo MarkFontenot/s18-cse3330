@@ -1,7 +1,12 @@
 version: '3'
 services:
-  mysql:
-      build:
-          context: ./mysql
-      ports:
-          - "3306:3306"
+    mysql:
+        build:
+            context: ./mysql
+        ports:
+            - "3306:3306"
+    node:
+        build:
+            context: ./node
+        ports:
+            - "3000:3000"
